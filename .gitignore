@@ -1,4 +1,6 @@
 media
+fotos_miembros
+miembros.csv
 
 # Byte-compiled / optimized / DLL files
 __pycache__/
