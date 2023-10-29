@@ -1,8 +1,6 @@
 import os
-import subprocess
 import pandas as pd
 from manim import *
-
 
 def cargarData(archivo):
     if not os.path.exists(archivo):
@@ -13,7 +11,6 @@ def cargarData(archivo):
 
 class miembros(Scene):
     def construct(self):
-        subprocess.run(["python3", "fotos_miembros.py"], check=True)
         miembros_bruto = cargarData("miembros.csv")
         
         # Obtener la opción del usuario
